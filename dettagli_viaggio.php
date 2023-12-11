@@ -18,20 +18,16 @@ $_SESSION["cognome"]=$cognome;
 $_SESSION["destinazione"]=$destinazione;
 $_SESSION["tipo_viaggio"]=$tipo;
 
-if($tipo_viaggio == "affari"){
+if($tipo_viaggio == 'affari'){
     print("Buongiorno $nome $cognome");
-print(Azienda <input type="text" name="nome_azienda">);
-print(Durata_viaggio <input type="text" name="durata_viaggio">);
-print(Budget <input type="text" name="budget">);
-
-
-
-
-
-
-
-}
+    echo("Azienda : <input type='text' name='nome_azienda'>");
+    echo("Durata_viaggio : <input type='text' name='durata_viaggio'>");
+    echo("Budget :  <input type='text' name='budget'>");
+    
+}else {}
 ?>
+
+
 
 </body>
 </html>
