@@ -30,7 +30,7 @@ if($tipo_viaggio == 'affari'){
 }else if($tipo_viaggio == 'vacanze') {
     print("Buongiorno $nome $cognome <br><br>");
     echo("Numero persone :<input type='number' name='numero_persone'> <br><br>");
-    echo("Tipo Allogio : <input type='text' name='tipo_allogio'> <br><br>");
+    echo("Tipo Allogio : <input type='text' name='tipo_alloggio'> <br><br>");
     echo ("Inserisci l'attività prescelta: <br>");
     echo ("<input type='checkbox' name='attivita' value='turismo'>");
     echo ("<label for='attivita'> Turismo </label><br>");
