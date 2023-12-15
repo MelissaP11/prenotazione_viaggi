@@ -13,10 +13,12 @@ $cognome =$_POST["cognome"];
 $destinazione =$_POST["destinazione"];
 $tipo_viaggio =$_POST["tipo_viaggio"];
 
-$_SESSION["nome"]=$nome;
-$_SESSION["cognome"]=$cognome;
-$_SESSION["destinazione"]=$destinazione;
-$_SESSION["tipo_viaggio"]=$tipo_viaggio;
+
+setcookie("nome",$nome,time()+120);
+setcookie("cognome",$cognome,time()+120);
+setcookie("destinazione",$destinazione,time()+120);
+setcookie("tipo_viaggio",$tipo_viaggio,time()+120);
+
 
 echo("<form method='post' action='riepilogo_prenotazione.php'>");
 

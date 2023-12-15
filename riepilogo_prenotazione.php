@@ -8,10 +8,10 @@
 
 <?php
 session_start();
-$nome = $_SESSION["nome"];
-$cognome = $_SESSION["cognome"];
-$destinazione = $_SESSION["destinazione"];
-$tipo_viaggio = $_SESSION["tipo_viaggio"];
+$nome = $_COOKIE["nome"];
+$cognome = $_COOKIE["cognome"];
+$destinazione = $_COOKIE["destinazione"];
+$tipo_viaggio = $_COOKIE["tipo_viaggio"];
 
 
 
@@ -22,9 +22,9 @@ if($tipo_viaggio == 'affari'){
     $azienda = $_POST["nome_azienda"];
     $durata_viaggio = $_POST["durata_viaggio"];
     $budget = $_POST["budget"];
-    $_SESSION["nome_azienda"]=$azienda;
-    $_SESSION["durata_viaggio"]=$durata_viaggio;
-    $_SESSION["budget"]=$budget;
+    //$_SESSION["nome_azienda"]=$azienda;
+    //$_SESSION["durata_viaggio"]=$durata_viaggio;
+    //$_SESSION["budget"]=$budget;
     echo("Buongiorno $nome $cognome <br><br> 
     La tua destinazione è $destinazione e hai scelto 
     come tipo di viaggio hai scelto: $tipo_viaggio.
@@ -34,9 +34,9 @@ if($tipo_viaggio == 'affari'){
     $n_persone = $_POST["numero_persone"];
     $tipo_allogio = $_POST["tipo_allogio"];
     $attivita = $_POST["attivita"];
-    $_SESSION["numero_persone"]=$n_persone;
-    $_SESSION["tipo_allogio"]=$tipo_allogio;
-    $_SESSION["attivita"]=$attivita;
+    //$_SESSION["numero_persone"]=$n_persone;
+    //$_SESSION["tipo_allogio"]=$tipo_allogio;
+    //$_SESSION["attivita"]=$attivita;
     echo("Buongiorno $nome $cognome <br><br> 
     La tua destinazione è $destinazione e hai scelto 
     come tipo di viaggio hai scelto: $tipo_viaggio.
